@@ -1,0 +1,17 @@
+
+Inicio
+
+Escribe "Introduce el precio unitario (0 para terminar)"
+Lee precio/u
+
+Escribe "Introduce la cantidad (no puede ser negativo)"
+Lee unidades
+
+Escribe "Introduce el precio de otro producto (0 para terminar)"
+Lee precio/u2
+
+Escribe "Introduce la cantidad (no puede ser negativo)"
+Lee cantidad 
+
+
+Si precio/u and precio/u2 =0
