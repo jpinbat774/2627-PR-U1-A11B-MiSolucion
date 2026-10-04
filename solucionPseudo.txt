@@ -1,17 +1,32 @@
-
 Inicio
+    total ← 0
 
-Escribe "Introduce el precio unitario (0 para terminar)"
-Lee precio/u
+    // Introducir productos
+    Escribir "Introduce el precio unitario (0 para terminar):"
+    Leer precio
 
-Escribe "Introduce la cantidad (no puede ser negativo)"
-Lee unidades
+    Mientras precio <> 0 Hacer
+        Escribir "Introduce las unidades compradas:"
+        Leer unidades
 
-Escribe "Introduce el precio de otro producto (0 para terminar)"
-Lee precio/u2
+        total ← total + (precio * unidades)
 
-Escribe "Introduce la cantidad (no puede ser negativo)"
-Lee cantidad 
+        Escribir "Introduce el precio unitario (0 para terminar):"
+        Leer precio
+    Fin Mientras
 
+    // Cobro
+    Escribir "Total a pagar: ", total
 
-Si precio/u and precio/u2 =0
+    Escribir "Introduce la cantidad entregada:"
+    Leer pagado
+
+    Mientras pagado < total Hacer
+        Escribir "Cantidad insuficiente. Faltan: ", total - pagado
+        Escribir "Introduce la cantidad entregada:"
+        Leer pagado
+    Fin Mientras
+
+    cambio ← pagado - total
+    Escribir "Cambio a devolver: ", cambio
+Fin
